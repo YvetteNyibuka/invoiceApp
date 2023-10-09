@@ -12,6 +12,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path='/' element = {<Landing/>}/>
       <Route path='/single_invoice/:id' element = {<SingleInvoice />}/>
+      <Route path='/Landing/' element = {<Landing />}/>
+      
     </Routes>
     </BrowserRouter>
 

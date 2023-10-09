@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../components/NewInvoice.css'; 
-
+import {AiOutlineDelete} from "react-icons/ai"
 
 
 function NewInvoice({showModal, onClose, onSubmit }){
@@ -294,7 +294,7 @@ console.log(formData);
                     <div className="delete">
                         <br />
                         <button id='delete' type="button" onClick={() => handleRemoveItem(index)}>
-                        delete
+                        <AiOutlineDelete style={{backgroundColor: 'black', fontSize: '2rem', color: 'white'}}/>
                         </button>
                     </div>
                 </div>
