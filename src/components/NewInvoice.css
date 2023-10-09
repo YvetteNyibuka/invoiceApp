@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #131426;
+}
+
+.modals{
+    opacity: 1;
+    visibility: visible;
+    height: fit-content;
+    position: absolute;
+    left: 7rem;
+    width: 50%;
+}
+
+.modalcontainer {
+    width: 100%;
+    background-color: #1E2139;
+    padding: 20px;
+    height: fit-content;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    background-color: #1E2139;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+
+.sec {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.location {
+    height: fit-content;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1rem;
+}
+
+.city, .postcode, .country, .sec1 {
+    width: calc(30% - 6px);
+    height: fit-content;
+    background-color: #1E2139;
+    display: flex;
+    flex-direction: column;
+}
+
+.input, .input1 {
+    padding: 1rem;
+    background-color: #252945;
+    border-radius: .5rem;
+    width: 100%;
+    border: none;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.invoice {
+    margin-top: 2rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.date, .payment {
+    width: 45%;
+    height: fit-content;
+}
+.sec3{
+    width: 100%;
+}
+.addItemBtn{
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 1rem;
+    background-color: #1E2139;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.addItemBtn:hover{
+    background-color: white;
+    color: #7E88CE;
+}
+
+.submit {
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 1rem;
+    background-color: #312D60;
+    width: 40%;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.item {
+    margin-top: 1rem;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.itemName{
+    width: 30%;
+    max-width: fit-content;
+    
+}
+.qty{
+    width: 10%;
+    
+}
+.price{
+    width: 15%;
+    
+}
+.total{
+    width: 20%;
+    
+}
+.delete{
+    width: 10%;
+   
+}
+
+.itemd{
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #1F2138;
+    border-right: none;
+    border-bottom: none;
+    border-radius: .5rem;
+    box-shadow: none;
+
+}
+#total{
+    margin-top: 1rem;
+    
+    
+}
+#delete{
+    margin-top: 2rem;
+}
+.addItem{
+    width: 100%;
+}
+
+/* .ItemName, .qty, .price, .total, .delete {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2138;
+    color: white;
+} */

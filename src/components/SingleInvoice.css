@@ -1,0 +1,21 @@
+.invoiceContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: red;
+    color: white;
+}
+
+.incoiceOptions{
+    display: flex;
+    background-color: blue;
+    height: 20%;
+    width: 60%;
+}
+
+.invoiceDetails{
+    display: flex;
+    background-color: purple;
+    height: 80%;
+    width: 60%;
+}

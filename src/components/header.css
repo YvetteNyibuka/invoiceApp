@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.header{
+    width: 8%;
+    height: 100%;
+    background-color: #1F2138;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic{
+    height: fit-content;
+    width: 100%;
+}
+
+.mode{
+    height: 60%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid white;
+}
+#mode{
+    width: 2rem;
+    width: 2rem;
+    margin-top: 18rem;
+}
+.profile{
+    height: 20%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+
+}
+.avatar{
+    border-radius: 100%;
+}
+
+.content{
+    width: 92%;
+    height: 100%;
+    background-color: blue;
+}
