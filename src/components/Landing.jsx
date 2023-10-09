@@ -72,7 +72,14 @@ function Landing() {
         <div className="invoicelist">
         
           {invoices.map((invoice) => (
-            <Link to={`/single_invoice/${invoice.id}`} className="invoiceRow" key={invoice.id}>
+            <Link
+            to={{
+              pathname: `/single_invoice/${invoice.id}`,
+              state: { invoiceData: invoice } // Ensure this is not null
+            }}
+            className="invoiceRow"
+            key={invoice.id}
+          >
               <div className="invoiceElement">{invoice.streetAdress1}</div>
               <div className="invoiceElement">{invoice.invoiceDate}</div>
               <div className="invoiceElement">{invoice.clientName}</div>
