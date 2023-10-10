@@ -74,8 +74,7 @@ align-items: center;
     font-weight: bolder;
     color: white;
     padding: 1rem;
-    background-color: #9277FF;
-    
+    background-color: #9277FF;    
     border-radius: 3rem;
     display: flex;
     justify-content: space-around;
@@ -114,4 +113,9 @@ align-items: center;
     justify-content: space-around;
     margin: auto;
     align-items: center;
+}
+
+#statusBtn{
+    padding: .5rem;
+    color: chocolate;
 }

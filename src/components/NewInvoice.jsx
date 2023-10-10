@@ -18,6 +18,7 @@ function NewInvoice({showModal, onClose, onSubmit }){
         invoiceDate: '',
         paymentTerms: '',
         projectDesc: '',
+        status: '',
         items: []
       });
 
@@ -85,6 +86,7 @@ function NewInvoice({showModal, onClose, onSubmit }){
             invoiceDate: formData.invoiceDate,
             paymentTerms: formData.paymentTerms,
             projectDesc: formData.projectDesc,
+            status: formData.status,
             items: filteredItems,
         };
     
@@ -111,6 +113,7 @@ function NewInvoice({showModal, onClose, onSubmit }){
             invoiceDate: '',
             paymentTerms: '',
             projectDesc: '',
+            status: '',
             items: [],
         });
 
@@ -228,7 +231,7 @@ console.log(formData);
             <div className="date">
                 <div className="sec3">
                     <label htmlFor="date">Invoice Date</label>
-                    <input type="text" id="invoiceDate" className="input1"
+                    <input type="date" id="invoiceDate" className="input1"
                     name='invoiceDate' 
                     onChange={(e) => setFormData({ ...formData, invoiceDate: e.target.value })}
                   value={formData.invoiceDate}/>
@@ -251,6 +254,13 @@ console.log(formData);
             name='projectDesc' 
             onChange={(e) => setFormData({ ...formData, projectDesc: e.target.value })}
           value={formData.projectDesc}/>
+        </div> <br/>
+         <div className="sec">
+            <label htmlFor="status">Status</label>
+            <input type="text" id="status" className="input"
+            name='status' 
+            onChange={(e) => setFormData({ ...formData, status: e.target.value })}
+          value={formData.status}/>
         </div> <br/>
     
         <h3>Item List</h3>

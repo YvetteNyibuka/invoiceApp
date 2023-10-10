@@ -16,13 +16,13 @@ const SingleInvoice = () => {
     console.log("Initial Invoices:", initialInvoices);
     const selectedInvoice = initialInvoices.find(invoice => invoice.id.toString() === id);
 
-    // Log the selected invoice to ensure it is correct
+    
     console.log('Selected Invoice:', selectedInvoice);
     setInvoice(selectedInvoice);
   }, [id]);
 
   if (!invoice) {
-    return null; // Add a loading state or a message while data is being fetched
+    return null; 
   }
 
   const {
@@ -38,6 +38,7 @@ const SingleInvoice = () => {
     country2,
     invoiceDate,
     paymentTerms,
+    status,
     items
   } = invoice;
 
@@ -52,7 +53,7 @@ const SingleInvoice = () => {
               <label htmlFor="status" style={{color: 'white'}}>Status</label>
               <span><button style={{color: '#33D69F', backgroundColor: '#1F2C3F', 
               border: 'none', marginLeft: '1rem', padding: '.5rem' }}> 
-              <GoDotFill style={{fontSize: '.5rem', marginRight: '.5rem'}}/>Paid</button></span>
+              <GoDotFill style={{fontSize: '.5rem', marginRight: '.5rem'}}/>{invoice.status}</button></span>
             </div>
             <div className="buttons">
               <button className='btnn' id='eBtn'>Edit</button>

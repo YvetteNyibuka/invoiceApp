@@ -4,6 +4,7 @@ import NewInvoice from "./NewInvoice";
 import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 import { GrAddCircle } from 'react-icons/gr';
+import { GoDotFill } from "react-icons/go";
 
 function Landing() {
   const storedInvoices = localStorage.getItem("invoices");
@@ -84,7 +85,8 @@ function Landing() {
               <div className="invoiceElement">{invoice.invoiceDate}</div>
               <div className="invoiceElement">{invoice.clientName}</div>
               <div className="invoiceElement">{invoice.clientEmail}</div>
-              <div className="invoiceElement">{invoice.paymentTerms}</div>
+              <div className="invoiceElement">
+                <button id="statusBtn" ><GoDotFill style={{fontSize: '.5rem', marginRight: '.5rem'}}/>{invoice.status}</button></div>
             </Link>
           ))}
         </div>
