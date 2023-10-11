@@ -66,6 +66,10 @@ Link{
     background-color: #1E2139;
    
  }
+ .party{
+   color: #7C5DFA;
+   background-color: red;
+ }
 .companyDetails{
     height: 20%;
     width: 100%;
@@ -109,6 +113,7 @@ Link{
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #252945;
     border-color: chocolate;
 }
 
@@ -127,7 +132,7 @@ Link{
   padding: 1rem;
 }
 #value{
-  margin-top: 1rem;
+  margin-top: -2rem;
 }
   .amountt{
     display: flex;
@@ -135,5 +140,10 @@ Link{
     padding: 1rem;
     background-color: #121319;
     height: fit-content
+
+  }
+
+  @media(min-width: 800px){
+    
 
   }

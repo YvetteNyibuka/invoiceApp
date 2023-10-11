@@ -31,7 +31,6 @@ body{
 }
 
 form {
-    width: 100%;
     background-color: #1E2139;
     display: flex;
     flex-direction: column;
@@ -174,3 +173,29 @@ form {
     width: 100%;
 }
 
+@media(min-width:800px){
+    .modals{
+        left: 0;
+        background-color: red;
+        width: 50%;
+    }
+    form {
+        padding: 0;
+        margin-bottom: 1rem;
+        text-align: start;
+    }
+    /* .city, .postcode, .country, .sec1 {
+        width: calc(30% - 6px);
+        height: fit-content;
+        background-color: #1E2139;
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .sec{
+        flex-direction: column;
+    }
+
+
+
+}
